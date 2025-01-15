@@ -1,0 +1,43 @@
+.startPageContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dev{
+    height: 50vh;
+    background-color: rgb(23,23,26);
+    color: whitesmoke;
+    align-content: center;
+}
+.devIcon{
+
+}
+
+.photos{
+    height: 50vh;
+    align-content: center;
+}
+
+img{
+    max-height: 40vh;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 992px){
+    .startPageContainer{
+        flex-direction: row;
+    }
+
+    .dev{
+        height: 100vh;
+        width: 50vw;
+        align-content: center;
+    }
+
+    .photos{
+        height: 100vh;
+        width: 50vw;
+        align-content: center;
+    }
+
+}
