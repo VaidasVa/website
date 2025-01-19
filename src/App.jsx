@@ -1,5 +1,4 @@
-import './App.css'
-import Startpage from './components/Startpage.jsx'
+import Startpage from './pages/Startpage.jsx'
 import Notification from "./components/Notification.jsx";
 
 function App() {
