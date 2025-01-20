@@ -8,15 +8,15 @@ import {StrictMode} from "react";
 function App() {
 
     return (
-        <>
+        <StrictMode>
             <Routes>
                 <Route path="/" element={<StartPage/>}></Route>
                 <Route path="/photos" element={<Photos/>}></Route>
                 <Route path="/dev" element={<Dev/>}></Route>
                 <Route path="*" element={<StartPage/>} />
             </Routes>
-            <Notification/>
-        </>
+            {/*<Notification/>*/}
+        </StrictMode>
     )
 }
 
