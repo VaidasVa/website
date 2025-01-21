@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
     text-align: justify;
 }
 
-.photosYearSelector{
+.photosYearSelector {
     min-height: 30px;
     display: flex;
     flex-direction: row;
@@ -48,11 +48,11 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-.photosYearSelector div:not(div:last-child){
+.photosYearSelector div:not(div:last-child) {
     border-right: solid 1px #a3a3a3;
 }
 
-.photosYearSelector div:hover{
+.photosYearSelector div:hover {
     font-weight: 900;
 }
 
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
     margin-top: 100px;
 }
 
-@media  (min-width: 480px){
+@media (min-width: 480px) {
 
     .photosHeader {
         height: 100px !important;
@@ -85,7 +85,6 @@ body::-webkit-scrollbar {
     .photosHeader img {
         max-height: 100px;
         margin-top: 10px;
-        /*margin-bottom: -20px;*/
         overflow: hidden;
     }
 
@@ -94,18 +93,19 @@ body::-webkit-scrollbar {
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .photosContainer img {
         width: 25%;
     }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
     .photosContainer img {
         width: 20%;
     }
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     .photosContainer img {
         width: 12.5%;
     }
