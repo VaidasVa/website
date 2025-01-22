@@ -1,4 +1,18 @@
 html, body{
     margin: 0;
     padding: 0;
+    height: 100dvh;
 }
+
+body {
+    overflow: scroll;
+    -webkit-background-clip: content-box;
+    margin-top: env(safe-area-inset-top);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+}
+

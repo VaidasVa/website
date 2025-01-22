@@ -7,3 +7,5 @@ RUN npm i
 COPY . .
 EXPOSE 5173
 CMD ["npm", "run", "dev"]
+
+# docker buildx build --platform linux/amd64,linux/arm64 .

@@ -5,14 +5,14 @@
 }
 
 .dev{
-    height: 50vh;
+    height: 50dvh;
     background-color: rgb(23,23,26);
     color: whitesmoke;
     align-content: center;
 }
 
 .photos{
-    height: 50vh;
+    height: 50dvh;
     align-content: center;
 }
 

@@ -1,5 +1,5 @@
 import "../static/style/Photos.css"
-import {Backdrop, Box, Modal, Typography} from "@mui/material";
+import {Backdrop, Box, Modal} from "@mui/material";
 import React from "react";
 
 export default function PhotosBody() {
@@ -25,7 +25,7 @@ export default function PhotosBody() {
         m: 0,
     };
 
-    return (<section>
+    return (<section className={"mainSection"}>
         <div className={"intro"}>
             I’ve always loved capturing moments through photography—it’s my way of telling stories, freezing emotions in time, keeping memories and impressions. I created this page to share my photos with others, hoping they bring as much joy and inspiration as I felt while taking them.
         </div>

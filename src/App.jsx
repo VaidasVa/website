@@ -11,7 +11,6 @@ function App() {
 
     setTimeout(() => setOpen(false), 3000);
 
-
     return (
         <StrictMode>
             <Routes>

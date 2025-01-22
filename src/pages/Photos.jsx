@@ -5,10 +5,10 @@ import PhotosFooter from "../components/PhotosFooter.module.jsx";
 
 export default function Photos() {
     return (
-        <>
+        <div className="photosBody">
             <PhotosHeader />
             <PhotosBody />
             <PhotosFooter/>
-        </>
+        </div>
     )
 }

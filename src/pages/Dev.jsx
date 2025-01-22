@@ -1,16 +1,19 @@
+import "../static/style/Dev.css"
+
 import { useTranslation } from 'react-i18next';
+
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
+import DevHeader from "../components/DevHeader.module.jsx";
 
  const Dev = () => {
     const { t } = useTranslation();
 
     return (
-        <>
-            <LanguageSwitcher/>
-            Dev page
-            <h1>{t("welcome")}</h1>
-            <p>{t('intro')}</p>
-        </>
+        <div className="devContainer">
+            {/*<LanguageSwitcher/>*/}
+            <DevHeader />
+aaa
+        </div>
     );
 };
 
