@@ -1,5 +1,5 @@
 import "../static/style/Photos.css"
-import {Box, Modal, Typography} from "@mui/material";
+import {Backdrop, Box, Modal, Typography} from "@mui/material";
 import React from "react";
 
 export default function PhotosBody() {
@@ -19,35 +19,40 @@ export default function PhotosBody() {
         maxWidth: "80vw",
         maxHeight: "80vh",
         bgcolor: 'background.paper',
-        border: '1px solid white',
-        boxShadow: 2,
-        p: 2.5,
+        // border: '1px solid white',
+        // boxShadow: 2,
+        p: 1,
         m: 0,
     };
 
     return (<section>
         <div className={"intro"}>
-            text for intro, text for intro,text for intro,text for intro,text for intro,text for intro,text for
-            intro,text for intro,text for intro,text for intro,text for intro,text for intro
+            I’ve always loved capturing moments through photography—it’s my way of telling stories, freezing emotions in time, keeping memories and impressions. I created this page to share my photos with others, hoping they bring as much joy and inspiration as I felt while taking them.
         </div>
         <div className={"photosYearSelector"}>
-            <div>2024</div>
-            <div>2025</div>
+            <div onClick={()=>setYear(2024)}>2024</div>
+            <div onClick={()=>setYear(2025)}>2025</div>
         </div>
         <div className={"photosContainer"}>
-            {itemData.map((item, index) => (<img className={"photo"}
-                                                 key={index}
-                                                 src={item.img}
-                                                 alt={item.title}
-                                                 onClick={() => {
-                                                     handleOpen();
-                                                     setSelectedPic(index);
-                                                     console.log(index);
-                                                     console.log(selectedPic)
-                                                 }}
-                />
-
-            ))}
+            {itemData.map((item) =>
+                item.year === year ? (
+                    <img
+                        className={"photo"}
+                        key={item.img}
+                        src={item.thumb}
+                        alt={item.title}
+                        onClick={() => {
+                            setSelectedPic(item.img);
+                            handleOpen();
+                        }}
+                    />
+                ) : null
+            )}
+            <Backdrop
+                sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })}
+                open={modalOpen}
+                onClick={handleClose}
+            >
             <Modal
                 open={modalOpen}
                 onClose={handleClose}
@@ -56,35 +61,54 @@ export default function PhotosBody() {
             >
                  {/*todo carousel here is better*/}
                 <Box sx={style}>
-                    <img src={itemData.at(selectedPic).img} />
+                    {itemData.map( item =>
+                        item.img === selectedPic ?
+                        <img src={item.img} key={item.img} alt={item.title}/> : null )
+                    }
                 </Box>
             </Modal>
+            </Backdrop>
         </div>
     </section>)
 }
 
 const itemData = [{
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Breakfast',
-}, {
-    img: 'https://picsum.photos/500', title: 'Burger',
-}, {
-    img: 'https://picsum.photos/400', title: 'Camera',
-}, {
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Coffee',
-}, {
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Hats',
-}, {
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Honey',
-}, {
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Basketball',
-}, {
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Fern',
-}, {
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Mushrooms',
-}, {
-    img: 'https://picsum.photos/seed/picsum/400', title: 'Tomato basil',
-}, {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1', title: 'Sea star',
-}, {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6', title: 'Bike',
-},];
+    img: '../src/static/photos/1.jpeg', thumb: '../src/static/photos/1thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/2.jpeg', thumb: '../src/static/photos/2thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/3.jpeg', thumb: '../src/static/photos/3thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/4.jpeg', thumb: '../src/static/photos/4thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/5.jpeg', thumb: '../src/static/photos/5thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/6.jpeg', thumb: '../src/static/photos/6thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/7.jpeg', thumb: '../src/static/photos/7thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/8.jpeg', thumb: '../src/static/photos/8thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/9.jpeg', thumb: '../src/static/photos/9thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/10.jpeg', thumb: '../src/static/photos/10thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/11.jpeg', thumb: '../src/static/photos/11thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/12.jpeg', thumb: '../src/static/photos/12thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/13.jpeg', thumb: '../src/static/photos/13thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/14.jpeg', thumb: '../src/static/photos/14thumb.jpeg', title: 'Breakfast', year: 2024,
+},{
+    img: '../src/static/photos/15.jpeg', thumb: '../src/static/photos/15thumb.jpeg', title: 'Breakfast', year: 2025,
+},{
+    img: '../src/static/photos/16.jpeg', thumb: '../src/static/photos/16thumb.jpeg', title: 'Breakfast', year: 2025,
+},{
+    img: '../src/static/photos/17.jpeg', thumb: '../src/static/photos/17thumb.jpeg', title: 'Breakfast', year: 2025,
+},{
+    img: '../src/static/photos/18.jpeg', thumb: '../src/static/photos/18thumb.jpeg', title: 'Breakfast', year: 2025,
+},{
+    img: '../src/static/photos/19.jpeg', thumb: '../src/static/photos/19thumb.jpeg', title: 'Breakfast', year: 2025,
+},
+];
