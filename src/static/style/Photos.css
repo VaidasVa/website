@@ -3,7 +3,6 @@
     color: #474747 !Important;
     display: flex;
     flex-direction: column;
-    /*position: relative;*/
     min-height: 98vh !important;
 }
 
@@ -71,7 +70,6 @@
 }
 
 .photosFooter {
-    /*position: absolute;*/
     bottom: 10px;
     left: 0;
     height: 30px;

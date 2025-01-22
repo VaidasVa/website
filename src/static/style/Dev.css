@@ -1,8 +1,13 @@
+:root{
+    --blueBckg: rgb(23, 23, 44)
+}
+
 .devContainer{
-    background: rgb(24,24,26);
+    background: var(--blueBckg);
     color: white;
-    min-height: 100lvh !important;
-    /*padding-top: env(safe-area-inset-top);*/
+    min-height: 98lvh !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -13,10 +18,8 @@
     height: 75px !important;
     text-align: center;
     z-index: 2;
-    background: rgb(24,24,26);
-
+    background: var(--blueBckg);
 }
-
 
 .header img {
     max-height: 100px;
@@ -24,3 +27,27 @@
     margin-bottom: -20px;
     overflow: hidden;
 }
+
+.info {
+    flex: 1;
+}
+
+.intro {
+    padding: 20px;
+    text-align: left;
+}
+
+.devFooter {
+    bottom: 10px;
+    left: 0;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.devFooter img {
+    height: 30px;
+    padding: 10px;
+}
+

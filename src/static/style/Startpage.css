@@ -6,7 +6,8 @@
 
 .dev{
     height: 50dvh;
-    background-color: rgb(23,23,26);
+    /*background-color: rgb(23,23,26);*/
+    background-color: rgb(23, 23, 44);
     color: whitesmoke;
     align-content: center;
 }

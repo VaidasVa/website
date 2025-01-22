@@ -6,8 +6,8 @@ export default function changeBackground() {
         document.body.style.backgroundColor = "white"
         metaThemeColor.setAttribute('content', "white");
     } else if (loc.includes("/dev")){
-        document.body.style.backgroundColor = "rgb(24,24,26)"
-        metaThemeColor.setAttribute('content', "rgb(24,24,26)");
+        document.body.style.backgroundColor = "rgb(23, 23, 44)"
+        metaThemeColor.setAttribute('content', "rgb(23, 23, 44)");
     }
 }
 
