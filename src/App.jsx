@@ -11,6 +11,13 @@ function App() {
 
     setTimeout(() => setOpen(false), 3000);
 
+    React.useEffect(() => {
+        var _mtm = window._mtm = window._mtm || [];
+        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='http://192.168.50.50:8597/js/container_Usmyigjc.js'; s.parentNode.insertBefore(g,s);
+    }, [])
+
     return (
         <StrictMode>
             <Routes>
