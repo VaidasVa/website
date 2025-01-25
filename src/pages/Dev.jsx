@@ -18,6 +18,7 @@ const Dev = () => {
                     Hi, I'm Vaidas
                 </h3>
                 <p>
+                    {/*todo: review the text*/}
                     Transitioning to a backend developer role has been and still is an exciting and rewarding journey.
                     With 15 years in managing diverse,
                     high-stakes projects—including e-Taxation systems, state registries, and cybersecurity initiatives—I
@@ -39,10 +40,19 @@ const Dev = () => {
                     I’m ready to bring my energy and expertise to
                     your next challenge and create meaningful solutions that stand out and let’s connect.
                 </p>
-
             </div>
+            {/*todo move contact info also here, add email*/}
         </section>
-        {/*<img src="https://ghchart.rshah.org/HEXCOLORCODE/vaidasva" alt="Name Your Github chart"/>*/}
+
+        <section className="projects">
+            {/*todo : projects section*/}
+        </section>
+
+        <section className="github">
+
+            {/*todo add github image*/}
+            {/*<img src="https://ghchart.rshah.org/HEXCOLORCODE/vaidasva" alt="Name Your Github chart"/>*/}
+        </section>
         <DevFooter/>
     </div>);
 };

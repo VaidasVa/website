@@ -1,3 +1,9 @@
+:root{
+    --swiper-theme-color: white, white, white, white;
+    --swiper-pagination-color: white, white, white, white;
+    --swiper-navigation-color: white, white, white, white;
+}
+
 .photosBody{
     background: white !important;
     color: #474747 !Important;
@@ -67,6 +73,18 @@
 .photo {
     width: 50%;
     height: 200px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff6347; /* Change the color to your desired color */
+    font-size: 40px; /* Adjust size */
+    z-index: 10; /* Ensure the buttons are on top */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #4682b4; /* Change color on hover */
 }
 
 .photosFooter {
