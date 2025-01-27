@@ -5,6 +5,11 @@ import {useTranslation} from 'react-i18next';
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
 import DevHeader from "../components/DevHeader.module.jsx";
 import DevFooter from "../components/DevFooter.module.jsx";
+import {Tooltip} from "@mui/material";
+import Contacts from "../components/Contacts.module.jsx";
+import Technologies from "../components/Technologies.module.jsx";
+import Projects from "../components/Projects.module.jsx";
+import Git from "../components/Git.module.jsx";
 
 const Dev = () => {
     const {t} = useTranslation();
@@ -41,7 +46,7 @@ const Dev = () => {
                     your next challenge and create meaningful solutions that stand out and let’s connect.
                 </p>
             </div>
-            {/*todo move contact info also here, add email*/}
+            <Contacts />
         </section>
 
         <section className="projects">
@@ -49,10 +54,10 @@ const Dev = () => {
         </section>
 
         <section className="github">
-
-            {/*todo add github image*/}
-            {/*<img src="https://ghchart.rshah.org/HEXCOLORCODE/vaidasva" alt="Name Your Github chart"/>*/}
         </section>
+        <Technologies />
+        <Projects />
+        <Git />
         <DevFooter/>
     </div>);
 };

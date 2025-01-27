@@ -38,15 +38,27 @@
     font-size: large;
 }
 
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    color: white;
+ }
+
 .devFooter {
     bottom: 10px;
     left: 0;
     height: 30px;
-    text-align: center;
     padding: 10px;
     margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
+.contacts img,
 .devFooter img {
     height: 30px;
     padding: 10px;
