@@ -5,12 +5,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css/keyboard";
+import "swiper/css/scrollbar";
+import {Keyboard, Mousewheel, Navigation, Pagination} from "swiper/modules";
 
 
 export default function PhotosBody() {
 
     const [modalOpen, setModalOpen] = React.useState(false);
+    const [years, setYears] = React.useState([2019, 2020, 2021, 2022, 2023, 2024, 2025]);
     const [year, setYear] = React.useState(2025);
     const [selectedPic, setSelectedPic] = React.useState(null);
 
@@ -20,31 +23,19 @@ export default function PhotosBody() {
     const filteredItems = itemData.filter((item) => item.year === year);
     const initialSlideIndex = filteredItems.findIndex((item) => item.img === selectedPic);
 
-    const style = {
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        width: "90vw",
-        height: "90vh",
-        outline: "none",
-        p: 1,
-        m: 0,
-    };
-
     return (
         <section className={"mainSection"}>
         <div className={"intro"}>
-            I’ve always loved capturing moments through photography—it’s my way of telling stories, freezing emotions in
-            time, keeping memories and impressions. I created this page to share my photos with others, hoping they
+            I’ve always loved capturing moments through photography—it’s my way of telling stories, freezing emotions and memories in
+            time, keeping impressions. I created this page to share my photos with the others, hoping they
             bring as much joy and inspiration as I felt while taking them.
         </div>
         <div className={"photosYearSelector"}>
-             {/*todo make selected one bold*/}
-            <div onClick={() => setYear(2022)}>2022</div>
-            <div onClick={() => setYear(2023)}>2023</div>
-            <div onClick={() => setYear(2024)}>2024</div>
-            <div onClick={() => setYear(2025)}>2025</div>
+            { years.map((yearX, index) => (
+                <div key={index}
+                     style={year === yearX ? {fontWeight: "bold"}: {}}
+                     onClick={() => setYear(yearX)}>{yearX}</div>
+            ))}
         </div>
         <div className={"photosContainer"}>
             {itemData.map((item) => item.year === year ? (<img
@@ -63,77 +54,35 @@ export default function PhotosBody() {
                 <Modal
                     open={modalOpen}
                     onClose={handleClose}>
-
-                    <Box sx={style}>
-                        <div
-                            onClick={handleClose}
-                            style={{
-                                position: "absolute",
-                                top: "10px",
-                                right: "10px",
-                                background: "transparent",
-                                border: "none",
-                                fontSize: "30px",
-                                color: "#fff",
-                                cursor: "pointer",
-                                zIndex: 10, // Ensure it stays on top of other elements
-                            }}
-                        >
-                            &times; {/* Close button symbol */}
+                    <Box className={"photoBox"}>
+                        <div className={"closeButton"} onClick={handleClose}>
+                            &times;
                         </div>
                         <Swiper
-                            modules={[Navigation, Pagination]}
+                            modules={[Navigation, Pagination, Keyboard, Mousewheel]}
                             navigation
                             pagination={{ clickable: true }}
+                            scrollbar={true}
                             lazy={true}
                             initialSlide={initialSlideIndex !== -1 ? initialSlideIndex : 0}
                             spaceBetween={10}
                             slidesPerView={1}
                             loop={false}
-                            keyboard={{
-                                enabled: true,
-                            }}
+                            keyboard={{ enabled: true }}
                             mousewheel={true}
-                            // style={{
-                            //     color: "white"
-                            // }}
                         >
                             {filteredItems.map((item) => (
                                 <SwiperSlide key={item.img}>
-                                    <div
-                                        style={{
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            justifyContent: "center",
-                                            alignItems: "center",
-                                            margin: "15px auto",
-                                            width: "fit-content",
-                                            height: 'fit-content',
-                                            maxWidth: "100%",
-                                            maxHeight: "90%",
-                                            padding: "20px 0 10px 0"
-                                        }}
-                                    >
-                                        <img
-                                            src={item.img}
-                                            alt={item.title}
-                                            style={{
-                                                maxWidth: "100%",
-                                                maxHeight: "90%",
-                                                objectFit: "contain", // Ensures the image fits within the box while maintaining aspect ratio
-                                                // display: "block",
-                                                margin: "0 auto"
-                                            }}
-                                        />
-                                        <div style={{color: "white"}}>
-                                        <p>{item.title}, {item.year}</p>
+                                    <div className={"swiperSlide"}>
+                                        <img src={item.img} alt={item.title}/>
+                                        <div className={"photoDescription"}>
+                                            <p>{item.title}, {item.year}</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
                     </Box>
-
                 </Modal>
             </Backdrop>
         </div>

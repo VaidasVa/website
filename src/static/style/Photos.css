@@ -1,7 +1,10 @@
 :root{
-    --swiper-theme-color: white, white, white, white;
-    --swiper-pagination-color: white, white, white, white;
-    --swiper-navigation-color: white, white, white, white;
+    --swiper-theme-color: white;
+    --swiper-navigation-color: white;
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bullet-border-radius: 4px;
+    --swiper-pagination-bullet-inactive-opacity: 0.4;
+    --swiper-pagination-bullet-horizontal-gap: 5px;
 }
 
 .photosBody{
@@ -45,7 +48,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: space-between;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
 }
 
 .photosYearSelector div {
@@ -71,20 +74,78 @@
 }
 
 .photo {
-    width: 50%;
-    height: 200px;
+    max-width: 50vw;
+    max-height: 50vw;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1/1;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: #ff6347; /* Change the color to your desired color */
-    font-size: 40px; /* Adjust size */
-    z-index: 10; /* Ensure the buttons are on top */
+.photoBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 90vh;
+    outline: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.closeButton{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.swiperSlide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+    max-height: 90%;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.swiperSlide > img {
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: contain;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.photoDescription{
+    position: relative;
+    bottom: 14px;
+    /*left: -50px;*/
+    align-self: flex-start;
+    background: rgba(0,0,0,0.55);
+    color: white;
+    padding: 0 10px;
+    border-radius: 0 8px 0 0;
+}
+
+.swiper-pagination-bullet{
+    background: white !important;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    color: #4682b4; /* Change color on hover */
+    color: #ffffff;
 }
 
 .photosFooter {
@@ -103,7 +164,11 @@
 
 @media (min-width: 480px) {
     .photosContainer img {
-        width: 33.33%;
+        max-width: 33.33vw;
+        max-height: 33.33vw;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 
     .photosHeader {
@@ -119,18 +184,32 @@
 
 @media only screen and (min-width: 768px) {
     .photosContainer img {
-        width: 25%;
+        max-width: 25vw;
+        max-height: 25vw;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .photosContainer img {
-        width: 20%;
+        max-width: 20vw;
+        max-height: 20vw;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .photosContainer img {
-        width: 12.5%;
+        min-width: 12.5vw;
+        min-height: 12.5vw;
+        max-width: 12.5vw;
+        max-height: 12.5vw;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 }
