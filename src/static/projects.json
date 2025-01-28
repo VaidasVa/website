@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "category": "personal",
+    "title": "vaidas.digital",
+    "longDescription": "",
+    "technologies": ["Java", "React", "AWS"],
+    "screenshots": []
+  },
+  {
+    "id": 2,
+    "category": "personal",
+    "title": "This website",
+    "longDescription": "",
+    "technologies": ["Java", "React", "AWS"],
+    "screenshots": []
+  },
+  {
+    "id": 3,
+    "category": "personal",
+    "title": "This website",
+    "shortDescription": "This is my website",
+    "longDescription": "",
+    "technologies": ["Java", "React", "AWS"],
+    "screenshots": []
+  }
+]

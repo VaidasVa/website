@@ -1,8 +1,16 @@
-:root{
+:root {
     --blueBckg: rgb(23, 23, 44)
 }
 
-.devContainer{
+h3 {
+    font-weight: 200;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+.devContainer {
     background: var(--blueBckg);
     color: white;
     min-height: 100dvh !important;
@@ -49,14 +57,14 @@
     justify-content: center;
     background: white;
     padding: 20px;
- }
+}
 
 .technologies {
     padding: 20px;
     flex: 1;
 }
 
-.technologies-container{
+.technologies-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -66,25 +74,80 @@
     align-content: flex-start;
 }
 
-.techItemContainer{
+.techItemContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.techItemContainer svg{
+.techItemContainer svg {
     height: 2.5rem;
     width: 2.5rem;
 }
-h4{
-    font-weight: 100;
-}
-.projects{
+
+.projects {
     padding: 20px;
     background: white;
     color: rgb(23, 23, 44);
 }
+
+.personalProjects,
+.workProjects {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: 150px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0 0 25px  0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: relative;
+}
+
+.projectTitle{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.shortDescription{
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.projectTech{
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+button{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px;
+    /*background: transparent;*/
+    margin: 0;
+    border: none;
+    z-index: 9;
+}
+
+.button:hover{
+    background: var(--blueBckg);
+}
+
 
 .git {
     padding: 20px;
