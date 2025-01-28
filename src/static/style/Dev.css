@@ -5,7 +5,7 @@
 .devContainer{
     background: var(--blueBckg);
     color: white;
-    min-height: 98lvh !important;
+    min-height: 100dvh !important;
     display: flex;
     flex-direction: column;
 }
@@ -19,23 +19,27 @@
     text-align: center;
     z-index: 2;
     background: var(--blueBckg);
+    margin-bottom: 40px;
 }
 
 .header img {
-    max-height: 100px;
+    max-height: 150px;
     margin-top: -20px;
     margin-bottom: -20px;
     overflow: hidden;
 }
 
 .info {
-    flex: 1;
+    /*flex: 1;*/
+    max-height: fit-content;
 }
 
 .intro {
     padding: 20px;
     text-align: left;
     font-size: large;
+    background: white;
+    color: rgb(23, 23, 44);
 }
 
 .contacts {
@@ -43,24 +47,61 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
-    color: white;
+    background: white;
+    padding: 20px;
  }
 
+.technologies {
+    padding: 20px;
+    flex: 1;
+}
+
+.technologies-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    color: white;
+    align-content: flex-start;
+}
+
+.techItemContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.techItemContainer svg{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+h4{
+    font-weight: 100;
+}
+.projects{
+    padding: 20px;
+    background: white;
+    color: rgb(23, 23, 44);
+}
+
+.git {
+    padding: 20px;
+    background: rgb(23, 23, 44);
+    color: white;
+}
+
 .devFooter {
-    bottom: 10px;
+    bottom: 0;
     left: 0;
-    height: 30px;
-    padding: 10px;
+    height: 40px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    background: white;
+    color: rgb(23, 23, 44);
 }
-
-.contacts img,
-.devFooter img {
-    height: 30px;
-    padding: 10px;
-}
-

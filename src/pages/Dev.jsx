@@ -19,9 +19,9 @@ const Dev = () => {
         <DevHeader/>
         <section className="info">
             <div className="intro">
-                <h3>
+                <h2>
                     Hi, I'm Vaidas
-                </h3>
+                </h2>
                 <p>
                     {/*todo: review the text*/}
                     Transitioning to a backend developer role has been and still is an exciting and rewarding journey.
@@ -47,13 +47,6 @@ const Dev = () => {
                 </p>
             </div>
             <Contacts />
-        </section>
-
-        <section className="projects">
-            {/*todo : projects section*/}
-        </section>
-
-        <section className="github">
         </section>
         <Technologies />
         <Projects />

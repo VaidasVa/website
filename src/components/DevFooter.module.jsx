@@ -8,12 +8,12 @@ export default function DevFooter() {
             <span>vaidas.digital</span>
             <Tooltip
                 title={"The content of this website is protected and is not allowed to be copied, shared in any way without the permission of the author."}>
-                <CopyrightIcon size="sm" style={{
-                    backgroundColor:"transparent",
-                    color:"white",
+                <sup><CopyrightIcon size="sm" style={{
+                    color:"black",
                     marginRight:"50px",
-                    textDecoration:"superscript",
-                }}/>
+                    height:"17px",
+                    verticalAlign: "super"
+                }}/></sup>
             </Tooltip>
             <Contacts />
         </div>

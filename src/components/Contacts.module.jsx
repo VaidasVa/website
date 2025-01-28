@@ -6,10 +6,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Contacts() {
     const addr = "moc.liamg@sadiav.sinokilav"
     const styles = {
-        backgroundColor:"transparent",
-        color:"white",
+        backgroundColor:"white",
+        color:"rgb(23, 23, 44)",
         marginRight:"10px",
-        cursor:"pointer"
+        cursor:"pointer",
+        width:"2rem",
+        height:"2rem"
+
+
     }
 
     const getEmail = () => {
