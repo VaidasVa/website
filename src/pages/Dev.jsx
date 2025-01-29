@@ -1,4 +1,4 @@
-import "../static/style/Dev.css"
+import "/public/style/Dev.css"
 
 import {useTranslation} from 'react-i18next';
 

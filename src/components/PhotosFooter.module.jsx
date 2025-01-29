@@ -1,4 +1,4 @@
-import "../static/style/Photos.css"
+import "/public/style/Photos.css"
 import {Tooltip} from "@mui/material";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 

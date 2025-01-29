@@ -1,4 +1,4 @@
-import "../static/style/Photos.css"
+import "/public/style/Photos.css"
 import {Backdrop, Box, Modal} from "@mui/material";
 import React, {useMemo, useCallback} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/keyboard";
 import "swiper/css/scrollbar";
 import {Keyboard, Mousewheel, Navigation, Pagination, Virtual} from "swiper/modules";
-import data from "/src/static/photos.json";
+import data from "/public/photos.json";
 
 
 export default function PhotosBody() {

@@ -1,4 +1,4 @@
-import "../static/style/Photos.css"
+import "/public/style/Photos.css"
 import PhotosHeader from "../components/PhotosHeader.module.jsx"
 import PhotosBody from "../components/PhotosBody.module.jsx";
 import PhotosFooter from "../components/PhotosFooter.module.jsx";

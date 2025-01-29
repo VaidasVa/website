@@ -1,4 +1,4 @@
-import "../static/style/Startpage.css"
+import "/public/style/Startpage.css"
 
 export default function startPage() {
     return (

@@ -1,4 +1,4 @@
-import projectData from "../static/projects.json"
+import projectData from "/public/projects.json"
 import icons from "./Icons.jsx"
 import {Box, Divider, Modal, Popover, Tooltip} from "@mui/material";
 import React, {useState} from "react";

@@ -1,5 +1,5 @@
-import "../static/style/Dev.css"
-import "../static/style/global.css"
+import "/public/style/Dev.css"
+import "/public/style/global.css"
 
 export default function DevHeader() {
     return (

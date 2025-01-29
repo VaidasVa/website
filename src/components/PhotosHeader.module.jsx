@@ -1,4 +1,4 @@
-import "../static/style/Photos.css"
+import "/public/style/Photos.css"
 
 export default function PhotosHeader() {
     return (
