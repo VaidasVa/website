@@ -22,7 +22,7 @@ export default function Contacts() {
     }
 
     return (
-        <div className={"contacts"}>
+        <section title={"Contacts"} className={"contacts"}>
             <Tooltip title={"Send me an e-mail"}>
                     <EmailIcon style={styles} onClick={getEmail} />
             </Tooltip>
@@ -36,6 +36,6 @@ export default function Contacts() {
                    <GitHubIcon style={styles}/>
                 </a>
             </Tooltip>
-        </div>
+        </section>
     )
 }
