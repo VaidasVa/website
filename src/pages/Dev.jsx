@@ -22,15 +22,13 @@ const Dev = () => {
                     Hi, I'm Vaidas
                 </h2>
                 <p>
-                    I’m a backend developer with a strong foundation in <i>Java, Spring Boot, and microservices</i>,
+                    I’m a backend developer with a foundation in <i>Java, Spring Boot, and microservices</i>,
                     building
                     scalable and efficient applications. My experience includes integrating third-party services (e.g.,
-                    on-demand TV platforms), developing <i>web applications and backend services</i>, and working with
+                    on-demand TV platforms, various modules, new functions, etc.), developing <i>web applications and backend services</i>, and working with
                     Jenkins,
                     AWS, and Apigee to streamline development and deployment.
-
-                    With 15 years of experience leading complex IT projects—including e-Taxation systems, state
-                    registries, and cybersecurity—I bring a structured, results-driven approach to software engineering.
+                    </p><p>
                     I’ve transitioned into backend development full-time, but my <i>long-term goal is to master
                     full-stack
                     development</i>, currently focusing on React and Go.
@@ -38,23 +36,24 @@ const Dev = () => {
                 <h3>Key Skills</h3>
                 <p>
                     ‣ Java, Spring Boot, REST APIs, microservices <br/>
-                    ‣ CI/CD (Jenkins, GitHub Actions), AWS, Apigee <br/>
+                    ‣ AWS, Apigee, CI/CD (Git, Jenkins) <br/>
                     ‣ System integration, automation, scalable architecture <br/>
                     ‣ Problem-solving, adaptability, continuous learning <br/>
                 </p>
                 <h3>Past Work & Other Experience</h3>
                 <p>
                     Before switching back to the area of my educational background in IT and software development, I
-                    managed high-impact government IT projects, coordinating
+                    managed various government IT projects, coordinating
                     teams, handling security challenges, and driving large-scale implementations. While not directly
                     coding, this experience sharpened my ability to analyze complex systems, optimize workflows, and
-                    solve problems under pressure—all of which I now apply in development.
+                    solve problems - all of which I now apply in development.
                 </p>
                 <h3>Let’s Connect!</h3>
                 <p>
                     I’m looking for new challenges where I can contribute my backend experience and grow as a developer.
                     Open to collaboration, learning opportunities, and meaningful projects — let’s talk!
                 </p>
+                <br/>
                 <Contacts/>
             </div>
 

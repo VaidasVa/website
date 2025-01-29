@@ -23,6 +23,11 @@ h5 {
 i {
     font-weight: 400;
 }
+
+strong{
+    font-weight: 400;
+}
+
 .devContainer {
     background: var(--blueBckg);
     color: white;
@@ -207,6 +212,10 @@ i {
     padding: 20px 20px;
 }
 
+.projectInfo-description p {
+    margin-top: 0;
+}
+
 .projectInfo-tech{
     min-width: 40dvw;
 }
@@ -218,14 +227,24 @@ i {
 }
 
 .projectInfo-tech ul li span img{
-    max-height: 24px;
     max-width: 24px;
-    padding: 0;
-    margin: 0;
+    max-height: 20px;
+    margin:0;
 }
 
-.projectInfo-screenshots {
-    /*min-width: 30dvw;*/
+.projectInfo-screenshots{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectInfo-screenshots img {
+    max-width: 80dvw;
+    max-height: 80dvh;
+    border-radius: 8px;
 }
 
 .git {
@@ -273,6 +292,9 @@ i {
     }
     .projectInfo-tech{
         min-width: 30dvw;
+    }
+    .projectInfo-screenshots img {
+        max-height: 70dvh;
     }
 
 }

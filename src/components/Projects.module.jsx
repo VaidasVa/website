@@ -1,9 +1,10 @@
 import projectData from "../static/projects.json"
 import icons from "./Icons.jsx"
-import {Box, Divider, Modal, Tooltip} from "@mui/material";
+import {Box, Divider, Modal, Popover, Tooltip} from "@mui/material";
 import React, {useState} from "react";
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import {FaGithub} from "react-icons/fa";
+import ReactMarkdown from "react-markdown";
 
 export default function Projects() {
     const [modalOpen, setModalOpen] = useState(false)
@@ -48,7 +49,8 @@ export default function Projects() {
                                     <FaGithub fontSize={"30px"} style={{color: "black"}}/>
                                 </a>) : null}
                             <div className={"projectInfo"}>
-                                <div className={"projectInfo-description"}>{projectData[selected].description}</div>
+                                <div className={"projectInfo-description"}>
+                                    <ReactMarkdown>{projectData[selected].description}</ReactMarkdown></div>
                                 <div style={{textAlign: "justify"}} className={"projectInfo-tech"}>
                                     <h5>Technologies used:</h5>
                                     {projectData[selected].technologies.map((technology) => (icons
@@ -66,7 +68,14 @@ export default function Projects() {
                                         ))))}
                                 </div>
                             </div>
+                            <h3>Screenshots</h3>
+                            <br/>
                             <div className={"projectInfo-screenshots"}>
+                                {projectData[selected].screenshots.length > 0 ?
+                                    projectData[selected].screenshots.map((img, index) => (
+                                            <img src={img} alt={`Screenshot ${index + 1}`} loading={"lazy"}/>
+                                    )) : <span>None for this project.</span>
+                                }
                             </div>
                         </Box>
                     </Modal>
@@ -77,7 +86,6 @@ export default function Projects() {
     return (
         <section title={"My Projects"} className={"projects innerMargin"}>
             <h2>Projects</h2>
-
             <Divider textAlign="left" style={{padding: "20px 0 0 0"}}> <span className={"subprojectHeader"}>Personal Projects</span></Divider>
             {projects("personal")}
             <Divider textAlign="left" style={{padding: "20px 0 0 0"}}><span
