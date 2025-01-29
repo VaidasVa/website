@@ -5,7 +5,6 @@ import {useTranslation} from 'react-i18next';
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
 import DevHeader from "../components/DevHeader.module.jsx";
 import DevFooter from "../components/DevFooter.module.jsx";
-import {Tooltip} from "@mui/material";
 import Contacts from "../components/Contacts.module.jsx";
 import Technologies from "../components/Technologies.module.jsx";
 import Projects from "../components/Projects.module.jsx";
@@ -18,12 +17,11 @@ const Dev = () => {
         {/*<LanguageSwitcher/>*/}
         <DevHeader/>
         <section className="info">
-            <div className="intro">
+            <div className="intro innerMargin">
                 <h2>
                     Hi, I'm Vaidas
                 </h2>
                 <p>
-                    {/*todo: review the text*/}
                     Transitioning to a backend developer role has been and still is an exciting and rewarding journey.
                     With 15 years in managing diverse,
                     high-stakes projects—including e-Taxation systems, state registries, and cybersecurity initiatives—I
@@ -45,8 +43,9 @@ const Dev = () => {
                     I’m ready to bring my energy and expertise to
                     your next challenge and create meaningful solutions that stand out and let’s connect.
                 </p>
+                <Contacts />
             </div>
-            <Contacts />
+
         </section>
         <Technologies />
         <Projects />
