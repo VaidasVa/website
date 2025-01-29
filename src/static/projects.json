@@ -2,26 +2,35 @@
   {
     "id": 1,
     "category": "personal",
-    "title": "vaidas.digital",
-    "longDescription": "",
-    "technologies": ["Java", "React", "AWS"],
+    "title": "vaidas.digital frontend",
+    "description": "The frontend is built using React to create a responsive and interactive user experience. Its component-based architecture ensures clean, reusable code and quick development cycles. The focus on responsiveness and smooth navigation makes the interface user-friendly and visually appealing, while maintaining a professional and functional design.",
+    "technologies": ["React", "Javascript","CSS", "HTML"],
+    "github": "https://github.com/VaidasVa/website",
     "screenshots": []
   },
   {
     "id": 2,
     "category": "personal",
-    "title": "This website",
-    "longDescription": "",
-    "technologies": ["Java", "React", "AWS"],
+    "title": "vaidas.digital backend",
+    "description": "The backend leverages Java to provide a stable, scalable, and efficient foundation for the website. With its robust capabilities, the backend ensures secure data handling, smooth communication with the frontend, and reliable performance under different loads. This setup emphasizes both functionality and long-term maintainability.",
+    "technologies": ["Java", "SpringBoot", "Thymeleaf", "Spring Cloud Config", "AWS", "MySQL", "HashiCorp Vault"],"github": "",
+    "github": "https://github.com/VaidasVa/websiteBackend",
     "screenshots": []
   },
   {
     "id": 3,
-    "category": "personal",
-    "title": "This website",
-    "shortDescription": "This is my website",
-    "longDescription": "",
-    "technologies": ["Java", "React", "AWS"],
+    "category": "work",
+    "title": "Online TV Backend",
+    "description": "",
+    "technologies": ["Java", "SpringBoot", "AWS", "Git", "Jenkins", "Apigee", "Optimizely"],"github": "",
+    "screenshots": []
+  },
+  {
+    "id": 4,
+    "category": "work",
+    "title": "Telecomunications Offers Fullstack",
+    "description": "",
+    "technologies": ["Java", "SpringBoot", "jBPM", "Angular", "Thymeleaf", "HTML", "CSS", "MySQL"],"github": "",
     "screenshots": []
   }
 ]
