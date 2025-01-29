@@ -6,7 +6,7 @@ export default function PhotosFooter() {
         {/*<span>vaidas.digital</span>*/}
         <Tooltip
             title={"The content of this website is protected and is not allowed to be copied, shared in any way without the permission of the author."}>
-            <img src={"../src/static/images/copyright-svgrepo-com.author-solarIcons.svg"} alt={"Copyright protected content"}/>
+            <img src={"../src/static/images/copyright-svgrepo-com.author-solarIcons.svg"} alt={"Copyright protected content"} loading="lazy"/>
         </Tooltip>
 
         <Tooltip title={"My Instagram Account"}>

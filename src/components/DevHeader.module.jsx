@@ -5,7 +5,7 @@ export default function DevHeader() {
     return (
         <a href={"/"}>
         <div className={"header"}>
-            <img src={"../src/static/images/devLogo.png"}  alt={"Vaidas Dev logo"}/>
+            <img src={"../src/static/images/devLogo.png"} loading="lazy" alt={"Vaidas Dev logo"}/>
         </div>
         </a>
     )

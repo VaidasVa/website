@@ -80,7 +80,7 @@ export default function PhotosBody() {
                             navigation
                             pagination={{clickable: true}}
                             scrollbar={true}
-                            lazy="true"
+                            lazy={true}
                             initialSlide={initialSlideIndex !== -1 ? initialSlideIndex : 0}
                             spaceBetween={10}
                             slidesPerView={1}
