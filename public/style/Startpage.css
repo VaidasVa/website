@@ -1,0 +1,40 @@
+.startPageContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dev{
+    height: 50dvh;
+    background-color: rgb(23, 23, 44);
+    color: whitesmoke;
+    align-content: center;
+}
+
+.photos{
+    height: 50dvh;
+    align-content: center;
+}
+
+img{
+    max-height: 40vh;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 992px){
+    .startPageContainer{
+        flex-direction: row;
+    }
+
+    .dev{
+        height: 100vh;
+        width: 50vw;
+        align-content: center;
+    }
+
+    .photos{
+        height: 100vh;
+        width: 50vw;
+        align-content: center;
+    }
+
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "category": "personal",
+    "title": "vaidas.digital frontend",
+    "description": "The **frontend** is developed with **React**, creating a responsive and interactive user experience. Some of the key features include:\n- **Component-based architecture**: React’s modular approach allows for clean, reusable code and faster development cycles.\n- **Responsive design**: The site adapts seamlessly to different screen sizes and devices, ensuring an optimal experience across desktop, tablet, and mobile.\n- **Smooth navigation**: The focus is on user-friendly, visually appealing navigation, making it easy for visitors to explore my work, photography, and blog posts.\n- **Interactive gallery**: A dedicated photography section is included to showcase my work and tell visual stories.\n  \nBy combining **React** with a **Spring Boot backend**, the website provides a smooth integration between the **CMS** and **frontend**, allowing content to be easily updated and managed.\n \n\n ---\n\n#### **Next Steps for Frontend**\n- **i18n support**: Adding languages like Dutch and Lithuanian.\n- **Refactoring to support more dynamic content from backend**\n",
+    "technologies": [
+      "React",
+      "Javascript",
+      "CSS",
+      "HTML"
+    ],
+    "github": "https://github.com/VaidasVa/website",
+    "screenshots": []
+  },
+  {
+    "id": 2,
+    "category": "personal",
+    "title": "vaidas.digital CMS backend",
+    "description": "The **backend** of the website is being built using **Java** and **Spring Boot**. It acts as a **CMS (Content Management System)**, allowing easy management of content such as projects, photography, and blog posts. Key components include:\n- **Content management** for dynamic updates to project details, portfolio images, and blog content.\n- **Database integration** using **MySQL** for storing information about projects, photography galleries, and more.\n- **AWS** for storing static content, and perhaps part of secrets - in combo with **Hashicorp**.\n- **APIs** that serve project details and photography content to the frontend.\n\n ---\n\n#### **Next Steps for Backend**\n- **Full implementation**\n- **Enhance CMS capabilities**: Adding more flexible content management options, including media uploads and rich text formatting.\n- **Improve API functionality**: Expanding the API to support more dynamic content retrieval and filtering.\n- **Optimize performance**: Fine-tuning database queries and implementing caching strategies to improve load times.\n",
+    "technologies": [
+      "Java",
+      "SpringBoot",
+      "Thymeleaf",
+      "Spring Cloud Config",
+      "AWS",
+      "MySQL",
+      "HashiCorp Vault"
+    ],
+    "github": "https://github.com/VaidasVa/websiteBackend",
+    "screenshots": [
+      "/projects/cms/cms1.webp",
+      "/projects/cms/cms2.webp",
+      "/projects/cms/cms3.webp",
+      "/projects/cms/cms4.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "work",
+    "title": "Online TV (TOD) Backend",
+    "description": "In this project, I was part of the Experimentation Team for a TV on-demand platform, where we worked on enhancing user engagement through feature flags. Our goal was to improve the user experience by testing different features and measuring their impact.\n\nWe would take a working **microservice** and create a **feature flag** (using **Java** and **Spring Boot**), which was then applied to a selected group of viewers using **Optimizely**. These viewers (bucketed into different groups) would interact with the new feature, and we’d track metrics like **view events** to see if the feature led to an increase or decrease in engagement.\n\nMy role in the team included:\n- Writing **code** to implement new features and changes.\n- Performing **peer code reviews** to maintain high-quality code.\n- Writing **tests** to ensure stability and reliability of the features.\n- **Deploying** the code to the cloud using **Jenkins, AWS,** and **Apigee** to make sure everything ran smoothly and efficiently.",
+    "technologies": [
+      "Java",
+      "SpringBoot",
+      "AWS",
+      "Git",
+      "Jenkins",
+      "Apigee",
+      "Optimizely"
+    ],
+    "screenshots": []
+  },
+  {
+    "id": 4,
+    "category": "work",
+    "title": "Telecomunications Offers Fullstack",
+    "description": "In this short-term project, we worked with a **mobile telecommunications company** to help them increase sales across various channels—**telemarketing**, **customer service centers**, **emails**, and **SMS messages**. Our goal was to track and calculate the impact of these efforts on sales growth.\n\nWe developed a **pilot module** that proposed the **best offers** for each customer based on their **purchase history**, including details on **discounts**, **offers**, and other promotions. This module was designed to be easily customizable by the client to tailor it to their specific needs.\n\n**Key technologies used:**\n- **Backend**: Java, **Spring Boot**, **jBPM**, **JPA** (with **MySQL**)  \n- **Frontend**: **Thymeleaf** (for module UI) and **Angular** (to integrate the module into the existing system)\n\n**My contributions included:**\n- Developing the **backend** in Java, working with **JPA** and **MySQL** to manage and store data.\n- Working on the **frontend** using **Thymeleaf** for module UI and making necessary **Angular** code adjustments for integration with the existing environment.",
+    "technologies": [
+      "Java",
+      "SpringBoot",
+      "jBPM",
+      "Angular",
+      "Thymeleaf",
+      "HTML",
+      "CSS",
+      "MySQL"
+    ],
+    "screenshots": []
+  }
+]

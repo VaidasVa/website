@@ -5,12 +5,12 @@ export default function startPage() {
         <div className={"startPageContainer"}>
             <a href={"/dev"}>
                 <div className={"dev"}>
-                    <img src="../src/static/images/devLogo.png" alt={"Software Development"}/>
+                    <img src="/images/devLogo.png" alt={"Software Development"}/>
                 </div>
             </a>
             <a href={"/photos"}>
                 <div className={"photos"}>
-                    <img src="../src/static/images/photoLogo.png" alt={"Photography"}/>
+                    <img src="/images/photoLogo.png" alt={"Photography"}/>
                 </div>
             </a>
         </div>

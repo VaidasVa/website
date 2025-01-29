@@ -16,9 +16,9 @@ export const icons = [
     {"id": "Git", "icon": <FaGitAlt />},
     {"id": "Jenkins", "icon": <FaJenkins />},
     {"id": "Docker", "icon": <FaDocker />},
-    {"id":"Apigee", "icon":  <img src={"../src/static/images/apigee.png"} alt={"Apigee logo"}
+    {"id":"Apigee", "icon":  <img src={"/images/apigee.png"} alt={"Apigee logo"}
                                   style={{height:'1rem', width:'2.5rem', margin:".75rem 0 .75rem 0"}}/>},
-    {"id":"Optimizely", "icon":  <img src={"../src/static/images/optimizely.png"} alt={"Optimizely logo"}
+    {"id":"Optimizely", "icon":  <img src={"/images/optimizely.png"} alt={"Optimizely logo"}
                                   style={{height:'2.5rem', width:'2.5rem'}}/>},
    {"id":"jBPM", "icon":  <img src={"https://www.jbpm.org/headerFooter/jBPMLogo_siteheader.png"} alt={"Optimizely logo"}
                                   style={{height:'auto', width:'2.5rem', padding: '1rem 0',

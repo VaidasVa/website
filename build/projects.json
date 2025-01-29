@@ -29,10 +29,10 @@
     ],
     "github": "https://github.com/VaidasVa/websiteBackend",
     "screenshots": [
-      "./src/static/projects/cms/cms1.webp",
-      "./src/static/projects/cms/cms2.webp",
-      "./src/static/projects/cms/cms3.webp",
-      "./src/static/projects/cms/cms4.webp"
+      "/projects/cms/cms1.webp",
+      "/projects/cms/cms2.webp",
+      "/projects/cms/cms3.webp",
+      "/projects/cms/cms4.webp"
     ]
   },
   {

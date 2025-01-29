@@ -4,7 +4,7 @@ export default function PhotosHeader() {
     return (
         <a href={"/"}>
             <div className={"photosHeader"}>
-            <img src={"../src/static/images/photoLogo.png"}  alt={"Vaidas Photo logo"}/>
+            <img src={"/images/photoLogo.png"}  alt={"Vaidas Photo logo"}/>
         </div>
         </a>
 
