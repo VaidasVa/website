@@ -1,5 +1,5 @@
-import projectData from "/src/static/projects.json"
-import icons from "/src/helpers/icons.jsx"
+import projectData from "../static/projects.json"
+import icons from "./Icons.jsx"
 import {Box, Divider, Modal, Tooltip} from "@mui/material";
 import React, {useState} from "react";
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';

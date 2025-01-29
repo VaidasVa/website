@@ -1,4 +1,4 @@
-import icons from "/src/helpers/Icons.jsx"
+import icons from "./Icons.jsx"
 
 export default function Technologies() {
     return (

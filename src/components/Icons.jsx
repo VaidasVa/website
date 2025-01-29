@@ -3,7 +3,7 @@ import {SiApachekafka, SiHashicorp, SiMongodb, SiSpring, SiSpringboot, SiThymele
 import {IoLogoJavascript} from "react-icons/io";
 import {DiMysql, DiRedis} from "react-icons/di";
 
-const icons = [
+export const icons = [
     {"id": "Java", "icon": <FaJava/>,},
     {"id": "SpringBoot", "icon":  <SiSpringboot />},
     {"id": "React", "icon": <FaReact/>,},
