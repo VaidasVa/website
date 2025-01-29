@@ -1,40 +1,33 @@
 import "../static/style/Photos.css"
 import {Backdrop, Box, Modal} from "@mui/material";
-import React, {useEffect} from "react";
+import React, {useMemo, useCallback} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/keyboard";
 import "swiper/css/scrollbar";
-import {Keyboard, Mousewheel, Navigation, Pagination} from "swiper/modules";
+import {Keyboard, Mousewheel, Navigation, Pagination, Virtual} from "swiper/modules";
 import data from "/src/static/photos.json";
 
 
 export default function PhotosBody() {
 
     const [modalOpen, setModalOpen] = React.useState(false);
-    const [years, setYears] = React.useState([]);
     const [year, setYear] = React.useState(2025);
     const [selectedPic, setSelectedPic] = React.useState(null);
 
-    useEffect(() => {
-        const yearsDistinct = [];
-        data.forEach((item) => {
-            if (!yearsDistinct.includes(item.year)) {
-                yearsDistinct.push(item.year);
-            }
-        });
-        setYears(yearsDistinct);
-    }, [data]);
+    const years = useMemo(() => [...new Set(data.map((item) => item.year))], []);
 
-    // console.log(z);
+    const handleOpen = useCallback(() => setModalOpen(true), []);
+    const handleClose = useCallback(() => setModalOpen(false), []);
 
-    const handleOpen = () => setModalOpen(true);
-    const handleClose = () => setModalOpen(false);
+    const filteredItems = useMemo(() => data.filter((item) => item.year === year), [year]);
 
-    const filteredItems = data.filter((item) => item.year === year);
-    const initialSlideIndex = filteredItems.findIndex((item) => item.image === selectedPic);
+    const initialSlideIndex = useMemo(
+        () => filteredItems.findIndex((item) => item.image === selectedPic),
+        [filteredItems, selectedPic]
+    );
 
     return (<section className={"mainSection"}>
         <div className={"intro"}>
@@ -75,23 +68,26 @@ export default function PhotosBody() {
                             &times;
                         </div>
                         <Swiper
+                            virtual
                             className="swiper"
-                            modules={[Navigation, Pagination, Keyboard, Mousewheel]}
+                            modules={[Navigation, Pagination, Keyboard, Mousewheel, Virtual]}
                             navigation
                             pagination={{clickable: true}}
-                            scrollbar={true}
-                            lazy={true}
+                            scrollbar={{ draggable: true }}
                             initialSlide={initialSlideIndex !== -1 ? initialSlideIndex : 0}
                             spaceBetween={10}
                             slidesPerView={1}
                             loop={false}
                             keyboard={{enabled: true}}
                             mousewheel={true}
+                            style={{ height: "90dvh" }}
                         >
-                            {filteredItems.map((item) => (<SwiperSlide key={item.image}>
+                            {filteredItems.map((item) => (
+                                <SwiperSlide key={item.image} virtualIndex={item.image}>
                                 <div className={"swiperSlide"}>
                                     <div className={"photoWrapper"}>
                                         <img src={item.image} alt={item.location}
+                                             className="swiper-lazy"
                                              onLoad={(e) => {
                                                  const isHorizontal = e.target.naturalWidth > e.target.naturalHeight;
                                                  e.target.style.width = isHorizontal ? "100dvw" : "auto";
