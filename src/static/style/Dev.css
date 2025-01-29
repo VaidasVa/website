@@ -2,12 +2,22 @@
     --blueBckg: rgb(23, 23, 44)
 }
 
+.innerMargin {
+    padding: 20px;
+}
+
 h3 {
     font-weight: 200;
+    margin-bottom: -10px;
+    margin-top: 30px;
 }
 
 h4 {
     font-weight: 100;
+}
+
+h5 {
+    margin: 0;
 }
 
 .devContainer {
@@ -37,17 +47,12 @@ h4 {
     overflow: hidden;
 }
 
-.info {
-    /*flex: 1;*/
-    max-height: fit-content;
-}
-
 .intro {
-    padding: 20px;
     text-align: left;
     font-size: large;
     background: white;
     color: rgb(23, 23, 44);
+    padding-bottom: 40px;
 }
 
 .contacts {
@@ -56,12 +61,6 @@ h4 {
     align-items: baseline;
     justify-content: center;
     background: white;
-    padding: 20px;
-}
-
-.technologies {
-    padding: 20px;
-    flex: 1;
 }
 
 .technologies-container {
@@ -78,7 +77,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .techItemContainer svg {
@@ -86,33 +85,41 @@ h4 {
     width: 2.5rem;
 }
 
+.techItemContainer h4 {
+    width: 85px;
+    /*max-width: 85px;*/
+    /*min-width: 85px;*/
+    word-break: break-word;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .projects {
-    padding: 20px;
     background: white;
     color: rgb(23, 23, 44);
 }
 
-.personalProjects,
-.workProjects {
+.subprojects {
     width: 100%;
     min-height: 150px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 10px;
     overflow-y: auto;
-    scrollbar-width: thin;
+    justify-content: center;
 }
 
 .projectCard{
     display: flex;
     flex-direction: column;
-    min-width: 200px;
+    align-items: center;
+    width: 300px;
     height: 150px;
     border-radius: 6px;
     padding: 10px;
-    margin: 0 0 25px  0;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin: 20px 0 20px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: relative;
 }
 
@@ -121,24 +128,29 @@ h4 {
     font-size: 1.2rem;
     font-weight: 300;
     text-transform: none;
+    padding-top: 15px;
+    max-width: 280px;
 }
 
-.shortDescription{
-    text-align: justify;
-    font-size: 1rem;
-}
-
-.projectTech{
+.projectTech {
+    text-align: center;
     font-size: 1.5rem;
-    margin: 1rem auto;
+    margin-top: 20px;
+    max-width: 280px;
+    position: absolute;
+    top: 35%;
 }
 
-button{
+.projectTech > span {
+    padding: 0 6px;
+}
+
+.button{
     position: absolute;
     bottom: 5px;
     right: 5px;
-    padding: 10px;
-    /*background: transparent;*/
+    padding: 5px;
+    background: transparent;
     margin: 0;
     border: none;
     z-index: 9;
@@ -146,13 +158,72 @@ button{
 
 .button:hover{
     background: var(--blueBckg);
+    color: white;
+    cursor: pointer;
+    border-radius: 20%;
 }
 
+
+
+.modalBox {
+    background: white;
+    width: 90dvw;
+    min-height: 50dvh;
+    max-height: 90dvh;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.projectInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.projectInfo-description{
+    text-align: initial;
+    min-width: 40dvw;
+    padding: 0 20px;
+}
+
+.projectInfo-tech{
+    min-width: 40dvw;
+}
+
+.projectInfo-tech ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.projectInfo-screenshots {
+    /*flex-grow: 4;*/
+    /*min-width: 30dvw;*/
+}
 
 .git {
     padding: 20px;
     background: rgb(23, 23, 44);
     color: white;
+}
+
+.git a img{
+    object-fit: cover;
+    height: 125px;
+    max-width: 100%;
+    object-position: 100% 0;
 }
 
 .devFooter {
@@ -167,4 +238,18 @@ button{
     padding: 20px;
     background: white;
     color: rgb(23, 23, 44);
+}
+
+@media only screen and (min-width: 600px) {
+    .subprojects {
+        justify-content: initial;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .innerMargin {
+        padding: 50px;
+    }
+    .gitChart {
+        text-align: center;
+    }
 }
