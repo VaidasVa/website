@@ -116,7 +116,7 @@ h5 {
     height: 150px;
     border-radius: 6px;
     padding: 10px;
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 30px 0px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: relative;
 }
@@ -149,6 +149,7 @@ h5 {
 }
 
 .button{
+    color: var(--blueBckg);
     position: absolute;
     bottom: 5px;
     right: 5px;
@@ -212,6 +213,13 @@ h5 {
     padding: 0 10px;
 }
 
+.projectInfo-tech ul li span img{
+    max-height: 24px;
+    max-width: 24px;
+    padding: 0;
+    margin: 0;
+}
+
 .projectInfo-screenshots {
     /*min-width: 30dvw;*/
 }
@@ -248,10 +256,12 @@ h5 {
         justify-content: initial;
     }
 
+    .projectCard{
+        margin: 20px 0 30px 20px;
+    }
+
     .projectInfo{
         flex-direction: row;
-        /*justify-content: space-between;*/
-        /*align-items: flex-start;*/
         padding: 20px 0;
     }
     .projectInfo-description{
