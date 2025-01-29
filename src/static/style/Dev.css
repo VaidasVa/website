@@ -20,6 +20,9 @@ h5 {
     margin: 0;
 }
 
+i {
+    font-weight: 400;
+}
 .devContainer {
     background: var(--blueBckg);
     color: white;
@@ -107,6 +110,9 @@ h5 {
     overflow-y: auto;
     justify-content: center;
 }
+.subprojectHeader{
+    font-size: 18px;
+}
 
 .projectCard{
     display: flex;
@@ -166,8 +172,6 @@ h5 {
     cursor: pointer;
     border-radius: 20%;
 }
-
-
 
 .modalBox {
     background: white;

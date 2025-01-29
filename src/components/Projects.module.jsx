@@ -67,7 +67,6 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className={"projectInfo-screenshots"}>
-
                             </div>
                         </Box>
                     </Modal>
@@ -79,9 +78,10 @@ export default function Projects() {
         <section title={"My Projects"} className={"projects innerMargin"}>
             <h2>Projects</h2>
 
-            <Divider textAlign="left" style={{padding:"20px"}}> <i>Personal Projects</i></Divider>
+            <Divider textAlign="left" style={{padding: "20px 0 0 0"}}> <span className={"subprojectHeader"}>Personal Projects</span></Divider>
             {projects("personal")}
-            <Divider textAlign="left" style={{padding:"20px"}}><i>Work Projects</i></Divider>
+            <Divider textAlign="left" style={{padding: "20px 0 0 0"}}><span
+                className={"subprojectHeader"}>Work Projects</span></Divider>
             {projects("work")}
         </section>
     )
