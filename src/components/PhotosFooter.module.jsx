@@ -1,12 +1,18 @@
 import "../static/style/Photos.css"
 import {Tooltip} from "@mui/material";
+import CopyrightIcon from "@mui/icons-material/Copyright";
 
 export default function PhotosFooter() {
-    return (<div className={"photosFooter"}>
-        {/*<span>vaidas.digital</span>*/}
+    return (
+        <div className={"photosFooter"}>
+        <span>vaidas.digital</span>
         <Tooltip
             title={"The content of this website is protected and is not allowed to be copied, shared in any way without the permission of the author."}>
-            <img src={"../src/static/images/copyright-svgrepo-com.author-solarIcons.svg"} alt={"Copyright protected content"} loading="lazy"/>
+            <sup><CopyrightIcon size="sm" style={{
+                color:"black",
+                height:"17px",
+                verticalAlign: "super"
+            }}/></sup>
         </Tooltip>
 
         <Tooltip title={"My Instagram Account"}>

@@ -57,7 +57,6 @@
     { "country":"The Netherlands", "location":"The Hague", "year": 2024, "image":"./src/static/photos/20240508-IMG_9305-Edit.webp", "thumbnail":"./src/static/photos/T_20240508-IMG_9305-Edit.webp"},
     { "country":"The Netherlands", "location":"The Hague", "year": 2024, "image":"./src/static/photos/20240511-IMG_9412.webp", "thumbnail":"./src/static/photos/T_20240511-IMG_9412.webp"},
     { "country":"The Netherlands", "location":"The Hague", "year": 2024, "image":"./src/static/photos/20240511-IMG_9443.webp", "thumbnail":"./src/static/photos/T_20240511-IMG_9443.webp"},
-    { "country":"The Netherlands", "location":"The Hague", "year": 2024, "image":"./src/static/photos/20240511-IMG_9453.webp", "thumbnail":"./src/static/photos/T_20240511-IMG_9453.webp"},
     { "country":"Lithuania", "location":"Birstonas", "year": 2024, "image":"./src/static/photos/20240518-IMG_9646.webp", "thumbnail":"./src/static/photos/T_20240518-IMG_9646.webp"},
     { "country":"Lithuania", "location":"Vilnius", "year": 2024, "image":"./src/static/photos/20240601-IMG_9856.webp", "thumbnail":"./src/static/photos/T_20240601-IMG_9856.webp"},
     { "country":"Lithuania", "location":"Vilnius", "year": 2024, "image":"./src/static/photos/20240612-IMG_0560.webp", "thumbnail":"./src/static/photos/T_20240612-IMG_0560.webp"},
