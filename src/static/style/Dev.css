@@ -87,8 +87,6 @@ h5 {
 
 .techItemContainer h4 {
     width: 85px;
-    /*max-width: 85px;*/
-    /*min-width: 85px;*/
     word-break: break-word;
     text-align: center;
     margin-top: 10px;
@@ -169,11 +167,12 @@ h5 {
     background: white;
     width: 90dvw;
     min-height: 50dvh;
-    max-height: 90dvh;
+    max-height: 80dvh;
     border-radius: 10px;
     padding: 20px;
     margin: 40px auto;
     position: relative;
+    overflow: scroll;
 }
 
 .closeButton {
@@ -186,7 +185,7 @@ h5 {
 
 .projectInfo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px 0;
@@ -195,7 +194,7 @@ h5 {
 .projectInfo-description{
     text-align: initial;
     min-width: 40dvw;
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
 .projectInfo-tech{
@@ -244,6 +243,20 @@ h5 {
     .subprojects {
         justify-content: initial;
     }
+
+    .projectInfo{
+        flex-direction: row;
+        /*justify-content: space-between;*/
+        /*align-items: flex-start;*/
+        padding: 20px 0;
+    }
+    .projectInfo-description{
+        padding: 0 20px;
+    }
+    .projectInfo-tech{
+        min-width: 30dvw;
+    }
+
 }
 @media only screen and (min-width: 768px) {
     .innerMargin {

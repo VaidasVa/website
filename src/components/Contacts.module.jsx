@@ -12,8 +12,6 @@ export default function Contacts() {
         cursor:"pointer",
         width:"2rem",
         height:"2rem"
-
-
     }
 
     const getEmail = () => {
