@@ -1,6 +1,6 @@
 import projectData from "/src/static/projects.json"
 import icons from "/src/helpers/icons.jsx"
-import {Box, Modal, Tooltip} from "@mui/material";
+import {Box, Divider, Modal, Tooltip} from "@mui/material";
 import React, {useState} from "react";
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import {FaGithub} from "react-icons/fa";
@@ -78,9 +78,10 @@ export default function Projects() {
     return (
         <section title={"My Projects"} className={"projects innerMargin"}>
             <h2>Projects</h2>
-            <h3 style={{paddingBottom: "-15px"}}>Personal Projects</h3>
+
+            <Divider textAlign="left" style={{padding:"20px"}}> <i>Personal Projects</i></Divider>
             {projects("personal")}
-            <h3>Work Projects</h3>
+            <Divider textAlign="left" style={{padding:"20px"}}><i>Work Projects</i></Divider>
             {projects("work")}
         </section>
     )
