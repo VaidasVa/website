@@ -9,6 +9,7 @@ function App() {
 
 
     return (
+        // todo remove strict mode for prod
         <StrictMode>
             <Routes>
                 <Route path="/" element={<StartPage/>} />

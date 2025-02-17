@@ -9,6 +9,7 @@ import Contacts from "../components/Contacts.module.jsx";
 import Technologies from "../components/Technologies.module.jsx";
 import Projects from "../components/Projects.module.jsx";
 import Git from "../components/Git.module.jsx";
+import Feedback from "../components/DevFeedback.module.jsx"
 
 const Dev = () => {
     const {t} = useTranslation();
@@ -60,6 +61,7 @@ const Dev = () => {
         </section>
         <Technologies/>
         <Projects/>
+        <Feedback />
         <Git/>
         <DevFooter/>
     </div>);

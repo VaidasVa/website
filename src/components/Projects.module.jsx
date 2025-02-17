@@ -9,9 +9,11 @@ import ReactMarkdown from "react-markdown";
 export default function Projects() {
     const [modalOpen, setModalOpen] = useState(false)
     const [selected, setSelected] = React.useState(0)
+//todo refactor to DevProjects
 
     function projects(type) {
-        return (<div className="subprojects">
+        return (
+            <div className="subprojects">
             {filter(type).map((project, index) => (
                 <div className="projectCard" key={index}>
                     <div className={"projectTitle"}>
@@ -86,10 +88,13 @@ export default function Projects() {
     return (
         <section title={"My Projects"} className={"projects innerMargin"}>
             <h2>Projects</h2>
-            <Divider textAlign="left" style={{padding: "20px 0 0 0"}}> <span className={"subprojectHeader"}>Personal Projects</span></Divider>
+            <Divider textAlign="left" style={{padding: "20px 0 0 0"}}>
+                <span className={"subprojectHeader"}>Personal Projects</span>
+            </Divider>
             {projects("personal")}
-            <Divider textAlign="left" style={{padding: "20px 0 0 0"}}><span
-                className={"subprojectHeader"}>Work Projects</span></Divider>
+            <Divider textAlign="left" style={{padding: "20px 0 0 0"}}>
+                <span className={"subprojectHeader"}>Work Projects</span>
+            </Divider>
             {projects("work")}
         </section>
     )
