@@ -9,7 +9,7 @@ function setFeedbackCardSize(index) {
     let contentHeight;
 
     if (currentHeight < 277) {
-        contentHeight = selectedCard.querySelector('.feedbackContent').scrollHeight;
+        contentHeight = selectedCard.querySelector('.feedbackContent').scrollHeight+50;
         selectedCard.style.maxHeight = `${contentHeight}px`;
         setWidth(selectedCard, currentWidth);
     } else {
