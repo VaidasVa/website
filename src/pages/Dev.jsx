@@ -20,7 +20,7 @@ const Dev = () => {
         <section className="info">
             <div className="intro innerMargin">
                 <h2>
-                    Hi, I'm Vaidas
+                    Hi, my name is Vaidas
                 </h2>
                 <p>
                     I’m a backend developer with a foundation in <i>Java, Spring Boot, and microservices</i>,

@@ -8,7 +8,7 @@ function setFeedbackCardSize(index) {
     const {height: currentHeight, width: currentWidth} = selectedCard.getBoundingClientRect();
     let contentHeight;
 
-    if (currentHeight < 277) {
+    if (currentHeight < 281) {
         contentHeight = selectedCard.querySelector('.feedbackContent').scrollHeight+50;
         selectedCard.style.maxHeight = `${contentHeight}px`;
         setWidth(selectedCard, currentWidth);
@@ -19,7 +19,7 @@ function setFeedbackCardSize(index) {
 }
 
 const setWidth = (selectedCard, currentWidth) => {
-    return currentWidth < 300 ? selectedCard.style.width = "100%" : selectedCard.style.width = "280px";
+    return currentWidth < 301 ? selectedCard.style.width = "100%" : selectedCard.style.width = "280px";
 }
 
 export default function DevFeedback() {

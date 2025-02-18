@@ -10,7 +10,7 @@ function App() {
 
     return (
         // todo remove strict mode for prod
-        <StrictMode>
+        // <StrictMode>
             <Routes>
                 <Route path="/" element={<StartPage/>} />
                 <Route path="/photos" element={<Photos/>} />
@@ -18,8 +18,7 @@ function App() {
                 <Route path="/test" element={<Test/>} />
                 <Route path="*" element={<StartPage/>} />
             </Routes>
-            {/*<Notification />*/}
-        </StrictMode>
+
     )
 }
 

@@ -1,5 +1,5 @@
 export default function changeBackground() {
-    console.log(window.location.href)
+    // console.log(window.location.href)
     let loc = window.location.href;
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     if (loc.includes("/photos")){
