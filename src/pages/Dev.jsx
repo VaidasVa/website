@@ -1,5 +1,5 @@
 import "/public/style/Dev.css"
-
+import Divider from '@mui/material/Divider';
 import {useTranslation} from 'react-i18next';
 
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
@@ -63,6 +63,7 @@ const Dev = () => {
         <Projects/>
         <Feedback />
         <Git/>
+        <Divider/>
         <DevFooter/>
     </div>);
 };

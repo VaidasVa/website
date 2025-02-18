@@ -299,6 +299,7 @@ strong {
 .git {
     background: white;
     color: rgb(23, 23, 44);
+    padding-bottom: 90px;
 }
 
 .git a img {
@@ -312,7 +313,6 @@ strong {
     bottom: 0;
     left: 0;
     height: 40px;
-    margin-top: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
