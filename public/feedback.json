@@ -1,17 +1,42 @@
 [
   {
     "id": 1,
-    "feedback": "Ok",
-    "name": "M.K."
+    "feedback": "Vaidas quickly adapted to his role as developer within the Analytics and Experimentation team. He rapidly familiarized himself with our systems and technologies, consistently asking relevant and insightful questions that helped him deepen his understanding and enhance his skills as a developer.\n\nThroughout the project, he demonstrated a strong desire to learn and improve, gaining both in-depth knowledge about our services and a broader understanding of the technologies we used and the entire project estate.\n\nVaidas is always eager to take on new and bigger challenges, even in areas that were unfamiliar to him, to facilitate his continuous improvement. As a newly formed team without fully established best practices, it was always a pleasure and insightful to discuss potential approaches with Vaidas. His contributions helped us become a more effective team and consistently deliver high-quality results.\n\nBy building on his knowledge and utilizing his skills, Vaidas was eventually comfortable engaging with the client directly to discuss and refine requirements, answer questions, and offer advice. He established a strong relationship with the client, which improved knowledge sharing between our team and the client, managed their expectations, and generally enhanced the relationship.\n\nVaidas is proactive in picking up tasks as needed to help us meet our goals and deliver results for the client. This included development, code reviews, QA, and release preparation.\n\nOverall, it was a pleasure working with Vaidas. He has shown his abilities as both an individual developer and a strong team member with a passion for learning, and I look forward to collaborating on future projects.\n\nContinue growing your development skills in your next project, pursue cloud certification, and keep delivering high-quality code!",
+    "name": "A.S."
   },
   {
     "id": 2,
-    "feedback": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab eveniet eos. Laudantium, numquam! Ea, similique magnam soluta non odit dolor eos molestias voluptas quia quasi, adipisci impedit, illo iure.",
-    "name": "D.R."
+    "feedback": "It has been a pleasure to work with Vaidas who has constantly showcased his excellent skills as a developer and colleague.\n\nOn joining the team Vaidas quickly familiarised himself with the systems and technologies we used, asking relevant and thoughtful questions that would help him gain a deeper understanding and improve his skills as a developer.\n\nThroughout his time on the project, he was always looking to learn more and keep improving these skills, both by gaining more in-depth knowledge about our services, but also wider knowledge around the technologies used and the whole TOD estate.\n\nVaidas was always willing to take on new and bigger challenges, even in areas where he was not familiar, to allow himself to keep improving.\n\nAs a new team we did not have fully established best practices, and it was always a pleasure and insightful to discuss with Vaidas what approaches the team could be taking and what we could do to improve the team. This led to us being a more effectives team and delivering a higher standard, consistently.\n\nBy continuing to build his knowledge and leveraging his skills, towards the end of the project he was comfortable reaching out to the client to discuss/refine requirements, answer any questions they had and offer advice. He developed a strong relationship with the client, where he boosted the knowledge sharing between our team and the client, managed their expectations and generally improved the relationship overall.\n\nVaidas was always proactive in picking up tickets where needed to help us achieve our goals and deliver for the client, this included doing development, code review, QA and release preparation.\n\nIt was a pleasure to work with Vaidas, he has shown his skills as both an individual developer and strong member of the team, with a passion and desire to learn and I look forward to collaborating on future projects.",
+    "name": "M.K."
   },
   {
     "id": 3,
-    "feedback": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab eveniet eos. Laudantium, numquam! Ea, similique magnam soluta non odit dolor eos molestias voluptas quia quasi, adipisci impedit, illo iure. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab eveniet eos. Laudantium, numquam! Ea, similique magnam soluta non odit dolor eos molestias voluptas quia quasi, adipisci impedit, illo iure. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab eveniet eos. Laudantium, numquam! Ea, similique magnam soluta non odit dolor eos molestias voluptas quia quasi, adipisci impedit, illo iure.",
+    "feedback": "In quite short period of time you’ve gained a good understanding of the subject domain of your team.\n\nVaidas independently developed several experiments, presented them on Sprint Demos and is able to assist team members in their efforts. Continue Learning and improving your programming skills. \n\nYou have a good drive and high motivation. Keep up the good work!",
+    "name": "T.O."
+  },
+  {
+    "id": 4,
+    "feedback": "Vaidas has shown good initiative and dedication, taking on tickets in various stages (Development, QA, Release preparation) to help push them across the board, this not only helps to meet our sprint goals but also helps the team to deliver work constantly and consistently.\n\nVaidas has built a good relationship with the customer allowing for him to collaborate and clarify requirements and expectations of experiments and deliver them to this standard.\n\nVaidas has shown and grown his knowledge in many areas, building an understanding of the MVT (Multivariate testing) approach, using Java, Jenkins, AWS and other development tools in his day to day and strong teamwork. \n\nFor the future I think Vaidas should continue to build deeper technical knowledge around testing tools, development techniques, and AWS.",
+    "name": "M.K."
+  },
+  {
+    "id": 5,
+    "feedback": "Vaidas, you are a valued member of my team and you exceed expectations for career level your at.\n\nFor future growth I would look into some contribution opportunities, since those will have positive impact during talent discussions.\n\nAs always, keep developing your technical knowledge.",
     "name": "D.R."
+  },
+  {
+    "id": 6,
+    "feedback": "Vaidas joined the company recently but shows great determination and effort to grow: along with project work, he successfully completes zone tasks and training roadmaps, successfully passed an exam and achieved cloud certificate.",
+    "name": "K.D."
+  },
+  {
+    "id": 7,
+    "feedback": "Vaidas is a great and remarkable person in his role. Really devoted and hands on at the same time. Would recommend him to every organization that is looking for focus and actually getting things done. \n\nFurthermore, I regard Vadas as highly motivated, showing a lot of empathy for the people he works with.",
+    "name": "R.D."
+  },
+  {
+    "id": 8,
+    "feedback": "I would like to express my appreciation for your active involvement in the Engagement area at the Accenture LT. \n\nYour readiness to help, provide new ideas, and find solutions to issues during discussions & events is truly commendable. \n\nYour dedication and proactive approach make a significant positive impact on the Engagement Team.",
+    "name": "A.R."
   }
 ]
