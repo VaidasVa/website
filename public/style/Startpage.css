@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
 }
 
 .dev{
@@ -9,15 +10,46 @@
     background-color: rgb(23, 23, 44);
     color: whitesmoke;
     align-content: center;
+    position: relative;
 }
 
 .photos{
     height: 50dvh;
     align-content: center;
+    position: relative;
 }
 
 img{
     max-height: 40vh;
+}
+
+.box-inner {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    z-index: 9;
+    background-image:
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
+
+    background-repeat: repeat-x;
+    background-size: 800px 100px;
+    background-position: 0 50%, -50px 50%, 150px 50%;
+    background-attachment: scroll;
+
+    pointer-events: none;
+
+    -webkit-animation: 120s waves linear infinite forwards;
+    animation: 120s waves linear infinite forwards;
+}
+
+@-webkit-keyframes waves {
+    to {
+        background-position: 1600px 50%, 3150px 50%, 5300px 50%;
+    }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 992px){
@@ -25,7 +57,14 @@ img{
         flex-direction: row;
     }
 
-    .dev{
+    .box-inner {
+        rotate: 270deg !important;
+        left: -3% !important;
+        z-index: 1;
+        animation: 60s waves linear infinite forwards;
+    }
+
+    .dev {
         height: 100vh;
         width: 50vw;
         align-content: center;
