@@ -27,11 +27,12 @@ img{
 }
 
 .box-inner {
+    /*position: absolute;*/
     position: absolute;
-    top: 42.5dvh;
+    top: 47dvh;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 75px;
     z-index: 9;
     background-image:
             url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
@@ -39,8 +40,8 @@ img{
             url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
 
     background-repeat: repeat-x;
-    background-size: 800px 100px;
-    background-position: 0 50%, -50px 50%, 150px 50%;
+    background-size: 600px 75px;
+    background-position: 0 50%, -50px 70%, 133px 90%;
     background-attachment: scroll;
 
     pointer-events: none;
@@ -63,7 +64,7 @@ img{
 
     .box-inner {
         rotate: 270deg !important;
-        left: 2vw !important;
+        left: 3.5vw !important;
         z-index: 1;
         animation: 60s waves linear infinite forwards;
         border: none;
