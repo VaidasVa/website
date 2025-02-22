@@ -42,6 +42,10 @@
     text-align: justify;
 }
 
+.intro p{
+    font-size: smaller;
+}
+
 .photosYearSelector {
     min-height: 30px;
     display: flex;
