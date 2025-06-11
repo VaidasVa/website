@@ -2,7 +2,7 @@ body {
     background: rgb(23, 23, 44);
 }
 
-.startPageContainer{
+.startPageContainer {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -11,19 +11,19 @@ body {
     overflow: hidden;
 }
 
-.dev{
+.dev {
     height: 50dvh;
     background-color: rgb(23, 23, 44);
     position: relative;
 }
 
-.photos{
+.photos {
     height: 50dvh;
     align-content: center;
     background-color: white;
 }
 
-img{
+img {
     max-height: 40vh;
 }
 
@@ -34,10 +34,9 @@ img{
     height: 75px;
     z-index: 9;
     zoom: 1.0;
-    background-image:
-            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
-            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
-            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23ffffff' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23ffffff' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
 
     background-repeat: repeat-x;
     background-size: 600px 75px;
@@ -64,16 +63,16 @@ img{
         max-width: 100vw;
         max-height: 100vh;
 
-        background: linear-gradient(to right, rgba(23, 23, 44, 100%),rgba(23, 23, 44, 100%), white) no-repeat;
+        background: linear-gradient(to right, rgba(23, 23, 44, 100%), rgba(23, 23, 44, 100%), white) no-repeat;
         zoom: 1;
     }
 
-    .startPageContainer{
-        height: 100dvh;
+    .startPageContainer {
+        /*height: 100dvh;*/
         min-width: 100vw;
         min-height: 100vh;
         max-width: 100vw;
-        max-height: 100vh;
+        /*max-height: 100vh;*/
         flex-direction: row;
         overflow: hidden;
     }
@@ -87,15 +86,14 @@ img{
 
 
     .box-inner {
-        rotate: -90deg !important;
-        position: absolute;
-        top: 50vh;
-        left: 6.5%;
-        zoom: 1.5;
-        max-height: 100vh;
+        transform: rotate(-90deg) scale(1.5);
+        right: -88.5%;
+        top: 50%;
+        min-width: 100%;
+        pointer-events: none;
     }
 
-    .photos{
+    .photos {
         min-height: 100vh;
         width: 45vw;
         align-content: center;
