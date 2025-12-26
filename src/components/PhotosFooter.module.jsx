@@ -19,13 +19,6 @@ export default function PhotosFooter() {
             <a href={"https://www.instagram.com/vaidasphoto/"} target="_blank" rel="noopener noreferrer">
             <img src={"/images/instagram-color-svgrepo-com.svg"} alt={"Instagram"}/>
             </a>
-
-        </Tooltip>
-
-        <Tooltip title={"My Flickr Account"}>
-            <a href={"https://flickr.com/photos/200260558@N05"} target="_blank" rel="noopener noreferrer">
-                <img src={"/images/flickr-svgrepo-com.author-edent.svg"} alt={"Flickr"}/>
-            </a>
         </Tooltip>
     </div>)
 }
