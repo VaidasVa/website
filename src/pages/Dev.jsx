@@ -36,8 +36,9 @@ const Dev = () => {
                 </p>
                 <h3>Key Skills</h3>
                 <p>
-                    ‣ Java, Spring Boot, REST APIs, microservices <br/>
+                    ‣ Java 21/17, Spring Boot 3, REST APIs, microservices <br/>
                     ‣ AWS, Apigee, CI/CD (Git, Jenkins) <br/>
+                    ‣ DB: Oracle, Postgres, Mongo, MySQL <br/>
                     ‣ System integration, automation, scalable architecture <br/>
                     ‣ Problem-solving, adaptability, continuous learning <br/>
                 </p>

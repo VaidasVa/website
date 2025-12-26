@@ -38,6 +38,21 @@
   {
     "id": 3,
     "category": "work",
+    "title": "Legal Entity Registration System",
+    "description": "In this project, I developed REST integrations with other client systems, leveraging Java 21, Spring Boot 3, Oracle and PostgreSQL databases, and RabbitMQ for messaging. I also focused on API design, service orchestration, data validation, exception handling, logging, and ensuring performance and reliability across distributed systems.",
+    "technologies": [
+      "Java",
+      "SpringBoot",
+      "Oracle DB",
+      "Postgres DB",
+      "GitLab",
+      "RabbitMQ"
+    ],
+    "screenshots": []
+  },
+  {
+    "id": 4,
+    "category": "work",
     "title": "Online TV (TOD) Backend",
     "description": "In this project, I was part of the Experimentation Team for a TV on-demand platform, where we worked on enhancing user engagement through feature flags. Our goal was to improve the user experience by testing different features and measuring their impact.\n\nWe would take a working **microservice** and create a **feature flag** (using **Java** and **Spring Boot**), which was then applied to a selected group of viewers using **Optimizely**. These viewers (bucketed into different groups) would interact with the new feature, and we’d track metrics like **view events** to see if the feature led to an increase or decrease in engagement.\n\nMy role in the team included:\n- Writing **code** to implement new features and changes.\n- Performing **peer code reviews** to maintain high-quality code.\n- Writing **tests** to ensure stability and reliability of the features.\n- **Deploying** the code to the cloud using **Jenkins, AWS,** and **Apigee** to make sure everything ran smoothly and efficiently.",
     "technologies": [
@@ -52,7 +67,7 @@
     "screenshots": []
   },
   {
-    "id": 4,
+    "id": 5,
     "category": "work",
     "title": "Telecomunications Offers Fullstack",
     "description": "In this short-term project, we worked with a **mobile telecommunications company** to help them increase sales across various channels—**telemarketing**, **customer service centers**, **emails**, and **SMS messages**. Our goal was to track and calculate the impact of these efforts on sales growth.\n\nWe developed a **pilot module** that proposed the **best offers** for each customer based on their **purchase history**, including details on **discounts**, **offers**, and other promotions. This module was designed to be easily customizable by the client to tailor it to their specific needs.\n\n**Key technologies used:**\n- **Backend**: Java, **Spring Boot**, **jBPM**, **JPA** (with **MySQL**)  \n- **Frontend**: **Thymeleaf** (for module UI) and **Angular** (to integrate the module into the existing system)\n\n**My contributions included:**\n- Developing the **backend** in Java, working with **JPA** and **MySQL** to manage and store data.\n- Working on the **frontend** using **Thymeleaf** for module UI and making necessary **Angular** code adjustments for integration with the existing environment.",
