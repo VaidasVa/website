@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap for search engines
+Sitemap: https://vaidas.digital/sitemap.xml
